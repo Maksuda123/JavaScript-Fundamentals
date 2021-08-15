@@ -353,3 +353,147 @@ let a = [[1, 2, 3, 4], [3, 4, 5], [5, 6], [7]];
 for (let i = 0, j = 3; i <= 3; i++, j--) {
   console.log("a[" + i + "][" + j + "] = " + a[i][j]);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//1. what will be the output of the below codes?
+console.log([] + []);
+// output: faka 
+
+console.log([] - []);
+//output: 0
+
+console.log([1, 2] + [ 1, 2]);
+//output: 1,21,2
+
+console.log([1, 2] - [ 1, 2]);
+//output: NaN
+
+console.log("Ami" + "Tomi");
+//output: AmiTomi
+
+console.log("Ami" - "Tomi");
+//output: NaN
+
+console.log({} + []);//Obj + Array
+//output: [object Object]
+
+console.log({} - []);
+//output: NaN
+
+const a = {};//boro obj er bitor choto obj
+const b = [];//boro array
+console.log(a, b);
+
+console.log(true + 5);
+//output: 6
+
+
+// Boolean k number a convert kora jai So js shetake jug korte parbey
+
+
+
+
+
+//2. what will be the output of the below codes?
+function myFunction(){
+  return 'Bangladesh';
+}
+const string = myFunction `hello`;
+console.log(string);
+//output: Bangladesh
+//keno Bangladesh output ashce? myFunction to call kori ni ki vabe ashlo? Tag Tamplate literal er karone dekte passi. Tamplate literal er age amra jokhon kono function likhe dai tar mane function er por je Tamplate literal ongsho ta ase sheta ai function er Argument akare chole jai. Mane ai function ta call hoiya jai.
+//Arguments aita ekta function er builtin array like object. Jeter modda function er shob arguments gulo thake.
+
+
+
+
+
+//3. how to make all text contents of a website editable?
+document.body.contentEditable = true;
+
+
+
+
+//4. what will be the output of the below codes?
+function b(){
+  console.log(`The length is ${this.length}`);
+}
+
+let a = {
+  length: 10,
+  method: function(b){
+    arguments[0]();
+  }
+};
+a.method(b, 5);
+//output: The length is 2
+
+
+
+
+
+
+
+
+//5. what will be the output of the below codes?
+const a = 'constructor';//aita string aita iterable
+console.log(a[a](01));//1
+//String[constrator property]
+
+
+let b = new String("Bangladesh");
+console.log(b); //constructor method pabo ai string er bitory
+console.log(String(01));//1
+//(01) = boro hater string function er modda ekta number 01 diya dilam she eta k string a convert kore disse
+
+
+
+
+
+
+//6. what will be the output?
+console.log(0.1 + 0.3);
+//output: 0.4
+console.log(0.1 + 0.2);//aita float number tai output normal na. 
+//output: 0.30000000000000004 kisu kisu khatre ai rokom hoi, jahatu 2 tar base alada
+console.log(0.3 + 0.6);
+//Base 2 = 0, 1
+//Base 3 = 0, 1, 2
+//decimal niya jokhon kaj kori tar base 10. Computer er shob kisur base hosse 2.
+
+
+
+
+//7. what will be the output of below code?
+console.log(("Bangladesh").__proto__.__proto__.__proto__);//("string/Bangladesh").__String__.__Object__.__Null__ //choto string ashse bor string theke boro string ashse bor Object theke er opor r kisu nai
+//.__proto she string ta je khan theke create hoiyase sheta return kore.
+
+let c = new String("Bangladesh");
+console.dir(c);//aiter bitore __proto__ pabo.
+
+
+
+
+
+
+
+
+//8. make a function that sorts its arguments without using loops
+const myFunction = function (){
+  console.log([].slice.call(arguments));
+  return [].slice.call(arguments).sort();
+};
+console.log(myFunction(2, 4, 5, 1));
+//output: (4) [1, 2, 4, 5]
