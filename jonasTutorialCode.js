@@ -1,50 +1,50 @@
-// // First class function return function
-// function interviewQuestion(job) {
-//     if(job === 'designer') {
-//         return function(name){
-//             console.log(`${name} Can you explain what is UX design?`);
-//         }
-//     }    
-//         else if(job === 'techer'){
-//             return function(name){
-//                 console.log(`${name} What subject do you tech?`);
-//             }
-//         }
-//         else{
-//             return function(name){
-//                 console.log(`${name} What are you do?`);
-//             }
-//         }
+// First class function return function
+function interviewQuestion(job) {
+    if(job === 'designer') {
+        return function(name){
+            console.log(`${name} Can you explain what is UX design?`);
+        }
+    }    
+        else if(job === 'techer'){
+            return function(name){
+                console.log(`${name} What subject do you tech?`);
+            }
+        }
+        else{
+            return function(name){
+                console.log(`${name} What are you do?`);
+            }
+        }
         
      
     
-// }
-// //for techer
-// var techerQuestion = interviewQuestion('techer');
-// techerQuestion('mila');
-// //or
-// var techerQuestion = interviewQuestion('techer')('lili');
-// //for designer
-// var designerQuestion = interviewQuestion('designer');
-// designerQuestion('mila');
+}
+//for techer
+var techerQuestion = interviewQuestion('techer');
+techerQuestion('mila');
+//or
+var techerQuestion = interviewQuestion('techer')('lili');
+//for designer
+var designerQuestion = interviewQuestion('designer');
+designerQuestion('mila');
 
 
 
-// //imadiate invok function Expression(iife)
-// function game(){
-//     var score = Math.random() * 10;
-//     console.log(score >= 5);
+//imadiate invok function Expression(iife)
+function game(){
+    var score = Math.random() * 10;
+    console.log(score >= 5);
     
-// }
-// game();
+}
+game();
 
 
 
-// (function game(){
-//     var score = Math.random() * 10;
-//     console.log(score >= 5);
+(function game(){
+    var score = Math.random() * 10;
+    console.log(score >= 5);
     
-// })(5);
+})(5);
 
 
 

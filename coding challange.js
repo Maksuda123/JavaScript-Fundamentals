@@ -1,130 +1,130 @@
-// //function coding challange 7 my drive cource
+//function coding challange 7 my drive cource
 
 
-// //iife function for private our code
-// //7
-// (function(){
-//     //1
-//     function Qestion(questions, answers, correct) {
-//         this.questions = questions;
-//         this.answers = answers;
-//         this.correct = correct;
-//     }
+//iife function for private our code
+//7
+(function(){
+    //1
+    function Qestion(questions, answers, correct) {
+        this.questions = questions;
+        this.answers = answers;
+        this.correct = correct;
+    }
     
-//     Qestion.prototype.displayQuestion = function() {
-//     console.log(this.questions);
-//     //amra jani answer koto gula hote pare 2,3 etc so loop korbo
-//     for(var i=0; i<this.answers.length; i++){
-//         console.log(i + ':' + this.answers[i]);
-//      }
-//     }
-//     //6
-//     Qestion.prototype.checkAnswer = function(ans) {
-//         if (ans === this.correct) {
-//             console.log("correct answer!")
-//         }else{
-//             console.log("Wrong answer. Try again");
-//         }
-//     }
-//     //2
-//     //answer ekta variable tai ekta variable er modda amra array akare onek gula value rakte pari tai array
-//     var q1 = new Qestion('Js Every where?', ['yes', 'No'], 0);
-//     var q2 = new Qestion('Js create fun?', ['yes', 'No', 'both'], 2);
-//     var q3 = new Qestion('Js cource butuful?', ['yes', 'No'], 0);
-//     //3
-//     question = [q1, q2, q3];
+    Qestion.prototype.displayQuestion = function() {
+    console.log(this.questions);
+    //amra jani answer koto gula hote pare 2,3 etc so loop korbo
+    for(var i=0; i<this.answers.length; i++){
+        console.log(i + ':' + this.answers[i]);
+     }
+    }
+    //6
+    Qestion.prototype.checkAnswer = function(ans) {
+        if (ans === this.correct) {
+            console.log("correct answer!")
+        }else{
+            console.log("Wrong answer. Try again");
+        }
+    }
+    //2
+    //answer ekta variable tai ekta variable er modda amra array akare onek gula value rakte pari tai array
+    var q1 = new Qestion('Js Every where?', ['yes', 'No'], 0);
+    var q2 = new Qestion('Js create fun?', ['yes', 'No', 'both'], 2);
+    var q3 = new Qestion('Js cource butuful?', ['yes', 'No'], 0);
+    //3
+    question = [q1, q2, q3];
     
-//     //4
-//     var n = Math.floor(Math.random() * question.length);
-//     question[n].displayQuestion();
-//     //5
-//     //Answer jano number hoi ai jonno parseInt //parseInt string k number a convert kore
-//     var answer = parseInt(prompt("Please secect the correct answer"));
+    //4
+    var n = Math.floor(Math.random() * question.length);
+    question[n].displayQuestion();
+    //5
+    //Answer jano number hoi ai jonno parseInt //parseInt string k number a convert kore
+    var answer = parseInt(prompt("Please secect the correct answer"));
     
-//     question[n].checkAnswer(answer);
-//     })()
-    
-
-
-
+    question[n].checkAnswer(answer);
+    })()
     
 
 
 
-
-
-
-// //Expert level
-// //7
-// (function(){
-//     //1
-//     function Qestion(questions, answers, correct) {
-//         this.questions = questions;
-//         this.answers = answers;
-//         this.correct = correct;
-//     }
     
-//     Qestion.prototype.displayQuestion = function() {
-//     console.log(this.questions);
-//     //amra jani answer koto gula hote pare 2,3 etc so loop korbo
-//     for(var i=0; i<this.answers.length; i++){
-//         console.log(i + ':' + this.answers[i]);
-//      }
-//     }
-//     //6
-//     Qestion.prototype.checkAnswer = function(ans, callback) {
-//         var sc;
-//         if (ans === this.correct) {
-//             console.log("correct answer!")
-//            sc = callback(true);
-//         }else{
-//             console.log("Wrong answer. Try again");
-//             sc = callback(false);
-//         }
-//         this.displayScore(sc);//displayScore ai khane pilam prototype er karone
-//     }
-//     Qestion.prototype.displayScore = function(score) {
-//         console.log("Your current score is: " + score);
-//         console.log("---------------------")
-//     }
-//     //2
-//     //answer ekta variable tai ekta variable er modda amra array akare onek gula value rakte pari tai array
-//     var q1 = new Qestion('Js Every where?', ['yes', 'No'], 0);
-//     var q2 = new Qestion('Js create fun?', ['yes', 'No', 'both'], 2);
-//     var q3 = new Qestion('Js cource butuful?', ['yes', 'No'], 0);
+
+
+
+
+
+
+//Expert level
+//7
+(function(){
+    //1
+    function Qestion(questions, answers, correct) {
+        this.questions = questions;
+        this.answers = answers;
+        this.correct = correct;
+    }
+    
+    Qestion.prototype.displayQuestion = function() {
+    console.log(this.questions);
+    //amra jani answer koto gula hote pare 2,3 etc so loop korbo
+    for(var i=0; i<this.answers.length; i++){
+        console.log(i + ':' + this.answers[i]);
+     }
+    }
+    //6
+    Qestion.prototype.checkAnswer = function(ans, callback) {
+        var sc;
+        if (ans === this.correct) {
+            console.log("correct answer!")
+           sc = callback(true);
+        }else{
+            console.log("Wrong answer. Try again");
+            sc = callback(false);
+        }
+        this.displayScore(sc);//displayScore ai khane pilam prototype er karone
+    }
+    Qestion.prototype.displayScore = function(score) {
+        console.log("Your current score is: " + score);
+        console.log("---------------------")
+    }
+    //2
+    //answer ekta variable tai ekta variable er modda amra array akare onek gula value rakte pari tai array
+    var q1 = new Qestion('Js Every where?', ['yes', 'No'], 0);
+    var q2 = new Qestion('Js create fun?', ['yes', 'No', 'both'], 2);
+    var q3 = new Qestion('Js cource butuful?', ['yes', 'No'], 0);
    
 
-//   //10 
-//     question = [q1, q2, q3];
-//     function score() {
-//         var sc = 0;
-//         return function(correct){
-//             if (correct) {
-//                 sc++;
-//             }
-//             return sc;
-//         }
-//     }
-//     var keepScore = score();//keepScore sc varible k use korbe closer er karone korte parbe
+  //10 
+    question = [q1, q2, q3];
+    function score() {
+        var sc = 0;
+        return function(correct){
+            if (correct) {
+                sc++;
+            }
+            return sc;
+        }
+    }
+    var keepScore = score();//keepScore sc varible k use korbe closer er karone korte parbe
 
-//    //8
-//    function nextQuestion(){
-//     //4
-//     var n = Math.floor(Math.random() * question.length);
-//     question[n].displayQuestion();
-//     //5
-//     //Answer jano number hoi ai jonno parseInt //parseInt string k number a convert kore
-//     var answer = prompt("Please secect the correct answer");
-//   //9
-//     if(answer !== 'exit') {//aita to cholte e thakbe tai exit dewa holo off korer jonno
-//         question[n].checkAnswer(parseInt(answer), keepScore);
+   //8
+   function nextQuestion(){
+    //4
+    var n = Math.floor(Math.random() * question.length);
+    question[n].displayQuestion();
+    //5
+    //Answer jano number hoi ai jonno parseInt //parseInt string k number a convert kore
+    var answer = prompt("Please secect the correct answer");
+  //9
+    if(answer !== 'exit') {//aita to cholte e thakbe tai exit dewa holo off korer jonno
+        question[n].checkAnswer(parseInt(answer), keepScore);
     
-//         nextQuestion();//function er bitor e function call holo next next qus jano cholte thake
-//     }
+        nextQuestion();//function er bitor e function call holo next next qus jano cholte thake
+    }
    
-//    }
-//    nextQuestion();
-//     })()
+   }
+   nextQuestion();
+    })()
     
 
 

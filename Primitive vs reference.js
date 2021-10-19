@@ -1,54 +1,54 @@
-// var a = 5;
-// var b = a;
-// console.log(a);//5
-// console.log(b);//5
+var a = 5;
+var b = a;
+console.log(a);//5
+console.log(b);//5
 
 
 
-// //a k change korbo
-// var a = 5;
-// var b = a;
-// a = 6;
-// console.log(a);//6
-// console.log(b);//5
+//a k change korbo
+var a = 5;
+var b = a;
+a = 6;
+console.log(a);//6
+console.log(b);//5
 
 
-// //a er modda ekta object nilam
-// var a = {
-//     name: 'sakib',
-// }
-// var b = a;
+//a er modda ekta object nilam
+var a = {
+    name: 'sakib',
+}
+var b = a;
 
-// a.name = "Tamim";
+a.name = "Tamim";
 
-// console.log(a);
-// console.log(b);
-// //output: {name: "Tamim"} {name: "Tamim"}
-// //b o tamim hoiya gese. ai outpit unexpectrd
-
-
-
-// //a er modda array nibo
-// var a = ['sakib', "tamim"];
-// var b = a;
-
-// a.push('Mashrafi');
-// console.log(a);//["sakib", "tamim", "Mashrafi"]
-// console.log(b);//["sakib", "tamim", "Mashrafi"]
-// //Object & array er khatre ekrokom bihave reference type
-// //Number, string er khatre er ek rokom behave karon ai 2 ta 2 dohoren er data type er modda pore 
+console.log(a);
+console.log(b);
+//output: {name: "Tamim"} {name: "Tamim"}
+//b o tamim hoiya gese. ai outpit unexpectrd
 
 
 
-//Reference value ekta mashter object theke ashe
-//primitive value gula stack er moto structure a rakhe % Refeernce value gula Heap er moto structure a rakhe
+//a er modda array nibo
+var a = ['sakib', "tamim"];
+var b = a;
 
-//stack limited ekta jaiga niya kaj kore
+a.push('Mashrafi');
+console.log(a);//["sakib", "tamim", "Mashrafi"]
+console.log(b);//["sakib", "tamim", "Mashrafi"]
+//Object & array er khatre ekrokom bihave reference type
+//Number, string er khatre er ek rokom behave karon ai 2 ta 2 dohoren er data type er modda pore 
 
 
 
-// person.name = 'Tamim'//mutation
-// Person = {}//Assignment....tai notun object create hoi
+Reference value ekta mashter object theke ashe
+primitive value gula stack er moto structure a rakhe % Refeernce value gula Heap er moto structure a rakhe
+
+stack limited ekta jaiga niya kaj kore
+
+
+
+person.name = 'Tamim'//mutation
+Person = {}//Assignment....tai notun object create hoi
 
 
 
